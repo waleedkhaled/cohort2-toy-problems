@@ -17,3 +17,23 @@
 * rockPaperScissors(5); // => [['rock', 'rock', 'rock', 'rock', 'rock'], etc...]
 *
 */
+function rockPaperScissors(number){
+  var array =[];
+  var array2 =["rock","paper","scissors"]
+  var bigArray=[];
+  array.length=3;
+  bigArray.length=number;
+  for (var i = 0; i < bigArray.length; i++) {
+    for (var j = 0; j < 4; j++) {
+    var x=Math.floor(Math.random() * array2.length)
+    array[j]=array2[x];
+    }
+    for (var m= 0; m < bigArray.length; m++) {
+      if (bigArray[i] !==array ) {
+      bigArray.push(array);        
+      }
+    }
+
+  }
+  return bigArray;
+}
