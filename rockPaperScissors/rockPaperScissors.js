@@ -23,17 +23,15 @@ function rockPaperScissors(number){
   var bigArray=[];
   array.length=3;
   bigArray.length=number;
-  for (var i = 0; i < bigArray.length; i++) {
-    for (var j = 0; j < 4; j++) {
-    var x=Math.floor(Math.random() * array2.length)
-    array[j]=array2[x];
-    }
-    for (var m= 0; m < bigArray.length; m++) {
-      if (bigArray[i] !==array ) {
-      bigArray.push(array);        
-      }
-    }
-
-  }
-  return bigArray;
+  	if (number > 0) {
+  		for (var i = 0; i < array.length; i++) {
+	    	var x=Math.floor(Math.random() * array2.length)
+    		array.push(array2[x])
+  		}
+  			if (bigArray.indexOf(array) === -1) {
+  				bigArray.push(array)
+  			}
+  	}	
+  return bigArray + rockPaperScissors(number-1);
 }
+
