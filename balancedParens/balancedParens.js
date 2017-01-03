@@ -25,19 +25,6 @@
  */
 
  var balancedParens = function (input) {
- 	var arr=[];
-	for (i=0;i<input.length;i++){
-		if(input[i]==="("){
-			arr.push(input[i])
-		}
-		if(input[i]===")"){
-			if(arr[arr.length-1]===")"){
-				return false;
-			}
-			
-			
-		}
-	}
-	return true;	
+
+ 	}
  };
-	
