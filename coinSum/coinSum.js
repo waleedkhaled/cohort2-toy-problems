@@ -12,3 +12,14 @@ Given that total amount of pences, calculate the number of ways to create that a
 Example:
 coinCombination(200p) //-> 73682
 */
+function coinCombination(amount){
+/*
+first we should iterate the amount over the coins units and see how much ways there are to generate 
+the given amount and then will generate the possible ways from the generated ways 
+
+
+
+*/
+
+}	
+}
