@@ -11,3 +11,7 @@
   * don't worry about handling cyclical object structures.
   *
   */
+
+  var deepEquals = function(obj1, obj2){
+
+  }
