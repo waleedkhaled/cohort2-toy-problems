@@ -16,6 +16,7 @@ NOTE: Once the chain starts the terms are allowed to go above one million.
 
 
 var longestCollatzSeq = function(){
+<<<<<<< HEAD
 	var newArray=[];
 	var temp=[];
 	var tempIndex=0;
@@ -37,5 +38,7 @@ var longestCollatzSeq = function(){
 	}
 }
   return tempIndex;
+=======
+>>>>>>> bb8517a2725233bbc3b562c76a45f0fdc05b163d
 
 }
