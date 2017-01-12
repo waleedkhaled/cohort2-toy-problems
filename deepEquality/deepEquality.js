@@ -15,10 +15,10 @@
   var deepEquals = function(obj1, obj2){
    obj1=JSON.stringify(obj1);
    obj2=JSON.stringify(obj2);
- if(obj1!==obj2){
-  return false;
- }
- else{
-  return true;
- }
+   if(obj1!==obj2){
+    return false;
   }
+  else{
+    return true;
+  }
+}
