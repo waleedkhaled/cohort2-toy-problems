@@ -20,6 +20,7 @@ of banana juice is only 0.25 (300 units apple juice + 100 units banana juice)
 Complete the functions in order to provide this functionality.
 */
 
+<<<<<<< HEAD
 function Jar(){
 	this.storage={};
 }
@@ -41,6 +42,12 @@ Jar.prototype.getTotalAmount=function(){
 	}
 	return total;
 }
+=======
+function Jar() {
+  // TODO
+}
+
+>>>>>>> 9088e14fd3d4b5f7980473d76fa7d9d9b84ec461
 /*
 These are some tests:
 var jar = new Jar();
