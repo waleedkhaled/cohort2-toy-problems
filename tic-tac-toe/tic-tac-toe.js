@@ -22,6 +22,7 @@ ticTacToe(solvedBoard);//should return 1
 */
 
 function ticTacToe(board){
+<<<<<<< HEAD
 	arr1=[];
 	arr2=[];
 	arr3=[];
@@ -57,4 +58,7 @@ function ticTacToe(board){
 		}
 		return 0;
 	}
+=======
+	
+>>>>>>> 169bb2998308d17180eaceea99dcf1c0881da3a6
 };
