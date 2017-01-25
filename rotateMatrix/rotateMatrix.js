@@ -24,11 +24,19 @@
  *
  * var rotatedMatrix = rotateMatrix(matrix); // Rotate 90 degrees clockwise
  * // rotatedMatrix is:
+<<<<<<< HEAD
   [ ['D',9,5,1],
    ['E','A',6,2],
    ['F','B',7,3],
    ['G','C',8,4]
   ]
+=======
+ * [ ['D',9,5,1],
+ *  ['E','A',6,2],
+ *  ['F','B',7,3],
+ *  ['G','C',8,4]
+ * ]
+>>>>>>> 1337768aeb5d682fb6643a9f52b37165938d4930
  * rotatedMatrix[0][0]; // 'D'
  * rotatedMatrix[3][2]; // 8
  *
@@ -38,6 +46,7 @@
  */
 
 var rotateMatrix =function (matrix) {
+<<<<<<< HEAD
 	var newMatrix=[];
 	var temp=[];
 	for(var i=0;i<matrix.length;i++){
@@ -85,4 +94,8 @@ var rotateMatrixRectangularwithDirection =function (matrix,clockwise) {
 	return newMatrix;
 }
 
+=======
+	
+}
+>>>>>>> 1337768aeb5d682fb6643a9f52b37165938d4930
 ///////////////////
