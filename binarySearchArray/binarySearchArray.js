@@ -11,6 +11,7 @@
  */
 
 var binarySearch = function (array, target) {
+<<<<<<< HEAD
 	mid=Math.floor(array.length/2);
 if(target>=mid){
 	for(var i=array[mid];i<array.length;i++){
@@ -26,5 +27,8 @@ else{
 		}
 	}
 }
+=======
+  
+>>>>>>> 058d88e467c5e3285e230388b5013dd17b1a7a31
 };
 
