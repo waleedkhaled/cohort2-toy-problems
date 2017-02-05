@@ -23,18 +23,18 @@
 */
 
 Array.prototype.isSubsetOf = function (arr) {
-var bool =false;
-for(var i=0;i<arr.length;i++){
-	arr[i]=JSON.stringify(arr[i]);
-}
-for (var i=0;i<this.length;i++){
-	
-	this[i]=JSON.stringify(this[i]);
-
-	if(arr.indexOf(this[i])===-1){
-		return bool;
+	var bool =false;
+	for(var i=0;i<arr.length;i++){
+		arr[i]=JSON.stringify(arr[i]);
 	}
-}
-bool=true;
-return bool;
+	for (var i=0;i<this.length;i++){
+		
+		this[i]=JSON.stringify(this[i]);
+
+		if(arr.indexOf(this[i])===-1){
+			return bool;
+		}
+	}
+	bool=true;
+	return bool;
 }
