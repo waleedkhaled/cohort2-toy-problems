@@ -4,7 +4,22 @@
  * a prime number, false if it's not.
  */
 var primeTester = function(n) {
+for(var i=2;i<n;i++){
+if(n%i===0){
+	return false;
+}
+}
+return true;
+}
 
+var primeTesterRange = function(n) {
+var arr=[];
+for(var i=0;i<=n;i++){
+if(primeTester(i)){
+	arr.push(i);
+}
+}
+return arr;
 }
 
  /* Extra credit: Write a function that generates a list of all prime numbers
