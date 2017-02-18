@@ -23,7 +23,6 @@
 */
 
 Array.prototype.isSubsetOf = function (arr) {
-<<<<<<< HEAD
 	var bool =false;
 	for(var i=0;i<arr.length;i++){
 		arr[i]=JSON.stringify(arr[i]);
@@ -38,7 +37,4 @@ Array.prototype.isSubsetOf = function (arr) {
 	}
 	bool=true;
 	return bool;
-=======
-
->>>>>>> 489641d63aec9a4741e9d52eb49286a5629cb485
 }
