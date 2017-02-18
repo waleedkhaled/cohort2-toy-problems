@@ -33,13 +33,24 @@
 
 var Tree = function(value){
   this.value = value;
-  this.children = [];
+  this.children = {};
 };
 
 
 
 
 Tree.prototype.countLeaves = function () {
+	var counter=0;
+	var child=this.children;
+	if(child===[]){
+		counter++;
+	}
+	while(this.children){
+		child=child.children;
+		if(child===[]){
+			counter++;
+		}
+	}
 }
 
 /**
@@ -51,6 +62,7 @@ Tree.prototype.countLeaves = function () {
   * (wrap values in Tree nodes if they're not already)
   */
 Tree.prototype.addChild = function(child){
+	this.children.push(child);
   
 };
 
@@ -59,12 +71,25 @@ Tree.prototype.addChild = function(child){
   * tree __or any of its sub trees__
   */
 Tree.prototype.isDescendant = function(child){
-  
+  while(this.children){
+  	var child1=this.children;
+  	child1=child1.children;
+  	if(child1===child){
+  		return true;
+  	}
+  }
+  return false;
 };
 
 /**
   * remove an immediate child
   */
 Tree.prototype.removeChild = function(child){
-  
+  while(this.children){
+  	var child1=this.children;
+  	child1=child1.children;
+  	if(child1===child){
+  		child1={};
+  	}
+  }
 };
