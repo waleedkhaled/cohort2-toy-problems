@@ -38,11 +38,52 @@
 
 
 var largestProductOfFour = function(array) {
+if(straight(array)>up(array)){
+	return straight(array);
+}
+else{
+	return up(array)
+}
+
 
 };
 
+var straight=function(array){
+	var temp=[];
+	var product=0;
+	for (var i=0;i<array.length;i++){
+		for(var j=0;j<array.length;j++){
+		temp.push(array[i][j]);
+		temp.push(array[i][j+1]);
+		temp.push(array[i][j+2]);
+		temp.push(array[i][j+3]);
+		if(temp.reduce(function(a,b){return a*b;})>product){
+		product=temp.reduce(function(a,b){return a*b;});
+	}
 
 
+		}
+	}
+	return product;
+}
+var up=function(array){
+	var temp=[];
+	var product=0;
+	for (var i=0;i<array.length;i++){
+		for(var j=0;j<array.length;j++){
+		temp.push(array[i][j]);
+		temp.push(array[i+1][j]);
+		temp.push(array[i+2][j]);
+		temp.push(array[i+3][j]);
+		if(temp.reduce(function(a,b){return a*b;})>product){
+		product=temp.reduce(function(a,b){return a*b;});
+	}
+
+
+		}
+	}
+	return product;
+}
 
 
 
